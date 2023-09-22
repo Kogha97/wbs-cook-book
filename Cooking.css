@@ -199,9 +199,97 @@ footer{
     font-size: small;
     padding-top: 20px;
 }
+
+/* menu  */
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+main h1{
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+main h2{
+    padding-bottom: 5vh;
+    padding-top: 5vh;
+}
+.food{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90vw;
+    padding-bottom: 10vh;
+}
+.food img{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+.img-container{
+ width: 500px;
+}
+
+.food-info{
+    width: 40vw;
+}
+.ingredients{
+    display: flex;
+    flex-direction: column;
+    color: black;
+    justify-content: flex-start;
+}
+.ingredients h3{
+    display: flex;
+    align-items: flex-start;
+    padding-bottom: 2vh;
+}
+.ingredients ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.ingredients li{
+    display: flex;
+    color: black;
+    align-items: flex-start;
+    gap: 5px;
+}
+.recipe{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.recipe h3{
+    display: flex;
+    align-items: flex-start;
+    padding-bottom: 1vw;
+    padding-top: 1vw;
+}
+.recipe ol{
+    display: flex;
+    color: black;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+    gap: 5px;
+    padding-left: 15px;
+
+}
+.rounded {
+    border-top: 5px solid orange;
+    border-radius: 5px;
+    width: 50%;
+    position: relative;
+    left: 25%;
+    padding-bottom: 5vh;
+}
 /* Food menu*/
 /* STARTER   */
-/* Lentil */
+/* Lentil 
 .Lentil-part{
    
     display: grid;
@@ -260,7 +348,7 @@ bottom:50px;
     justify-content: center;
     align-items: center;
 }
-/* Prawns*/
+/* Prawns*
 .div{
     display: grid;
     padding-top: 40px;
@@ -329,7 +417,7 @@ bottom:50px;
     background-color: #030a0a;
 }
                   /*MAİN*/
-/*Döner and İskender*/
+/*Döner and İskender*
 .STARTER-Döner{
     display: grid;
     padding-top: 25px;
@@ -407,7 +495,7 @@ bottom:50px;
     height: 2px;
     background-color: #030a0a;
 }
-/*Köfte-part*/
+/*Köfte-part*
 .Köfte-Part{
     display: grid;
     grid-template-columns:repeat (1fr 1fr);
@@ -462,7 +550,7 @@ bottom:50px;
     padding-top: 10px;
 }
 
-/*Mantı-part*/
+/* antı-part* *
 
 .Manti-Part{
     display: grid;
@@ -518,7 +606,7 @@ bottom:50px;
     grid-column-end: 4;
     padding-top: 20px;
 }
-/*Grilled sea bass - part */
+/*Grilled sea bass - part *
 .Grilled-sea-Part{
     display: grid;
     grid-template-columns:repeat (1fr 1fr);
@@ -574,7 +662,7 @@ bottom:50px;
     padding-top: 10px;
 }
 
-/*Rosted chicken-part */ 
+/*Rosted chicken-part *
 
 .Rosted-chicken-Part{
     display: grid;
@@ -632,7 +720,7 @@ bottom:50px;
     padding-top: 10px;
 }
 
-/* Duck rice-part*/
+/* Duck rice-part
 
 .Duck-rice-Part{
     display: grid;
@@ -692,7 +780,7 @@ bottom:50px;
    
          /* DESERTS */
 
-/*Baklava*/
+/*Baklava
 
 .Baklava-part{
     display: grid;
@@ -765,7 +853,7 @@ bottom:50px;
     grid-column-end: 4;
     padding-top: 20px;
 }
-/*Sericaia*/
+/*Sericaia*
 
 .Sericaia-Part{
     display: grid;
@@ -819,5 +907,4 @@ bottom:50px;
     display: grid;
     grid-column-start: 1;
     grid-column-end: 4;
-    padding-top: 10px;
-}
+    padding-top: 10px;}    
