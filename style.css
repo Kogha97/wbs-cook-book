@@ -244,14 +244,10 @@ main h2{
     text-align: center;
     color: bisque;
     transition: 300ms all;
-    
-    
 }
 .img-container:hover .History{
-    
     right: 0;
-    opacity: 0.9;
-   
+    opacity: 0.8;
 }
 .food-info{
     width: 100%;
