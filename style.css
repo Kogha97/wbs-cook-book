@@ -28,6 +28,9 @@ nav{
     font-size: 13px;
 
 }
+.navbar-smallscreen{
+    display: none;
+}
 .navbar{
 
     display:flex;
@@ -403,7 +406,7 @@ main h2{
     footer{
         display: flex;
         flex-direction: row;
-        justify-content: flex-start;
+        justify-content: space-around;
         height: 200px;
         background-color: orange;
     }
@@ -500,4 +503,226 @@ main h2{
         padding: 15px;
         text-align: justify;
     }
+}
+@media (max-width:500px){
+
+    .navbar{
+        display: none;
+    }
+    .Logo{
+        width: 100px;
+        height: 100px;
+    }
+    .navbar-smallscreen{
+        display: block;
+    }
+    /* hamburger menu */
+    *,
+    *::after,
+    *::before {
+      box-sizing: border-box;
+    }
+    
+    body {
+      margin: 0;
+    }
+    header{
+      background-color: orange;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      min-width: 100%;
+      height: 100px;
+    
+    }
+    :root {
+      --bar-width: 50px;
+      --bar-height: 5px;
+      --hamburger-gap: 6px;
+      --foreground: white;
+      --background: orange;
+      --hamburger-margin: 8px;
+      --animation-timing: 200ms ease-in-out;
+      --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
+    }
+    
+    .hamburger-menu {
+      --x-width: calc(var(--hamburger-height) * 1.41421356237);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      gap: var(--hamburger-gap);
+      width: max-content;
+      position: absolute;
+      top: var(--hamburger-margin);
+      left: var(--hamburger-margin);
+      z-index: 2;
+      cursor: pointer;
+      position: absolute;
+      left: 82vw;
+      top: 30px;
+    }
+    
+    .hamburger-menu:has(input:checked) {
+      --foreground: white;
+      --background: white;
+    }
+    
+    .hamburger-menu:has(input:focus-visible)::before,
+    .hamburger-menu:has(input:focus-visible)::after,
+    .hamburger-menu input:focus-visible {
+      border: 1px solid var(--background);
+      box-shadow: 0 0 0 1px var(--foreground);
+    }
+    
+    .hamburger-menu::before,
+    .hamburger-menu::after,
+    .hamburger-menu input {
+      content: "";
+      width: var(--bar-width);
+      height: var(--bar-height);
+      background-color: var(--foreground);
+      border-radius: 9999px;
+      transform-origin: right center;
+      transition: opacity var(--animation-timing), width var(--animation-timing),
+        rotate var(--animation-timing), translate var(--animation-timing),
+        background-color var(--animation-timing);
+    }
+    
+    .hamburger-menu input {
+      appearance: none;
+      padding: 0;
+      margin: 0;
+      outline: none;
+      pointer-events: none;
+    }
+    
+    .hamburger-menu:has(input:checked)::before {
+      rotate: -45deg;
+      width: var(--x-width);
+      translate: 0 calc(var(--bar-height) / -2);
+    }
+    
+    .hamburger-menu:has(input:checked)::after {
+      rotate: 45deg;
+      width: var(--x-width);
+      translate: 0 calc(var(--bar-height) / 2);
+    }
+    
+    .hamburger-menu input:checked {
+      opacity: 0;
+      width: 0;
+    }
+     .sidebar {
+    position: absolute;
+    transition: transform var(--animation-timing);
+    transform: translateX(110vw);
+    padding-top: calc(var(--hamburger-height) + var(--hamburger-margin) + 1rem);
+    background-color: orange;
+    color: var(--background);
+    max-width: 30vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: orange;
+    min-width: 30vw;
+    justify-content: flex-start;
+    z-index: 1;
+    }
+    .sidebar .navbar-hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 40px;
+        padding-right: 5px;
+    }
+    .sidebar .navbar-hamburger a{
+        color: white;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }     
+    
+    .hamburger-menu:has(input:checked) + .sidebar {
+        transform: translateX(0);
+    }
+
+  
+    /* hamburger menu finished */
+    /* making side bar more user friendly */
+    .sidebar .dropdowncontent {
+        display: none;
+        position: absolute;
+        background-color: orange;
+        min-width: 160px;
+        box-shadow: -8px 8px 16px 0px rgba(0, 0, 0, 0.2); 
+        z-index: 1;
+        right: 100%; 
+        top: 145px;
+        left: auto; 
+        cursor: pointer;
+    }
+    .sidebar /.dropdown:hover + .dropdowncontent{
+        transform: translateX(0);
+    }
+    .sidebar .dropdownbutton {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: white;
+        background-color: transparent;
+        font-family: inherit;
+        margin: 0;
+        padding-bottom: 10px;
+        cursor: pointer;
+    }
+    */
+    .navbar-hamburger{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 15px;
+        padding-right: 5px;
+    }
+    }
+    .navbar-smallscreen a{
+        text-decoration: none;
+        color: white;
+    }
+    .dropdown{
+    float: right;
+    overflow: hidden;
+    }
+    button{
+        background-color: orange;
+        color: white;
+        font-family: 'roboto';
+        font-size: 16px;
+        border: none;
+    }
+    .dropdown .dropdownbutton{
+        font-size: medium;
+        border: none;
+        outline: none;
+        color: white;
+        background-color: transparent;
+        font-family: inherit;
+        margin: 0;
+    }
+    .navbar-smallscreen a:hover, .dropdown:hover .dropdownbutton:hover{
+        background-color: rgb(250, 201, 109)
+      }
+      .dropdowncontent {
+        display: none;
+        position: absolute;
+        background-color: orange;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      .dropdowncontent a {
+        float: none;
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
 }
