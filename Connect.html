@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> <title>Cooking with Tayfun and João</title>
     <title>Document</title>
@@ -24,27 +25,45 @@
             </div>
             <a href="drinks.html">Drinks</a>
             <a href="Connect.html">Contact Us</a>
+           
+        </div>
+        <div class="navbar-smallscreen">
+            <label class="hamburger-menu">
+                <input type="checkbox" />
+              </label>
+              <aside class="sidebar">
+                <nav class="navbar-hamburger">
+                    <a href="index.html">Home</a>
+                    <a href="aboutus.html">About Us</a>
+                    <div class="dropdown">
+                        <button class="dropdownbutton">Food</button>
+                        <div class="dropdowncontent">
+                            <a href="starter.html">Starters</a>
+                            <a href="main.html">Mains</a>
+                            <a href="deserts.html">Deserts</a>
+                        </div>
+                    </div>
+                    <a href="drinks.html">Drinks</a>
+                    <a href="Connect.html">Contact Us</a>
+                </nav>
+              </aside>
         </div>
     </Header>
     
-
-    <form>
-        <div class="form-page">
-            <h1>Send us </h1>
-        <div class="Name"><input type="text" id="myTextbox" name="Name"placeholder="Name"style="width: 400px; height: 46px;">
-            <br><br>
-        <div class="E-Mail"><input type="text" id="myTextbox" name="myTextbox"placeholder="E-mail"style="width: 400px; height: 46px;">
-            <br><br>
-        <div class="Subject"><input type="text" id="myTextbox" name="myTextbox"placeholder="Subject"style="width: 400px; height: 46px;">
-            <br><br>
-        <div class="Massage"><textarea type="text" id="Your Massage" name="Your"placeholder="Massage"style="width: 400px; height: 201px;"> </textarea>
-            </div>
-           </div>
-          </div>
-         </div>
-        </div>
         
+            
+    <section class="contact-us" id="simple-list-item-4">
+        <h1>Connect With Us</h1>
+        <form action="POST">
+            <input type="text" placeholder="First and Last name"><br><br>
+            <input type="text" placeholder="Email"><br><br>
+            <textarea name="" id="" cols="0" rows="15" placeholder="Message"></textarea><br><br>
+            <button type="submit">Submit</button>
         </form>
+    </section>
+        
+        
+    
     
       
      <footer>

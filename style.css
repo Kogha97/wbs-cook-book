@@ -108,6 +108,7 @@ button{
         padding-left: 10%;
         padding-right: 10%;
         font-family: 'roboto';
+        padding: 50px;
      }
      .about-us-text{
         max-width: 500px;
@@ -125,8 +126,8 @@ button{
         align-items: center;
      }
      img{
-        max-width: 100%;
-        max-height: 100%;
+        width: 100%;
+        height: 100%;
      }
      .about-us-text h1{
         padding-bottom: 30px;
@@ -240,8 +241,8 @@ main h2{
  overflow: hidden;
 }
 .img-container .History{
-    width: 500px;
-    height: 500px;
+    width: auto;
+    height: auto;
     background-color: black;
     font-family: "Roboto";  
     position: absolute;
@@ -332,14 +333,37 @@ main h2{
     padding-bottom: 5vh;
 }
 /*Connect us */
-
-.form-page{
-    display: flex;
-    justify-content: center;
+.contact-us {
+   
     align-items: center;
+    display: flex;
     flex-direction: column;
-    gap: 20px;
-    padding: 50px;
+
+}
+.contact-us h1{
+    color: black;
+    padding-top: 50px;
+  
+}
+.contact-us form {
+    display: flex;
+    flex-direction: column;
+    min-width: 350px;
+    padding-top: 5vh;
+}
+input {
+    height: 4vh;
+}
+
+.contact-us form button {
+    min-width: 6wv;
+    max-width: 8vw;
+    min-height: 35px;
+    align-self: center;
+    background-color:transparent;
+    border: 2px solid rgb(172, 115, 9);
+    color: black;
+    cursor: pointer;
 }
 
 
@@ -367,6 +391,7 @@ main h2{
     text-align: center;
 }
 .Turkey img {
+
     box-sizing: border-box;
     border-top-left-radius: 5%;
     border-bottom-left-radius: 5%;
@@ -396,167 +421,52 @@ main h2{
     font-family: "Roboto";
     
 }
-/* media queris */
-/*
-@media (max-width:1100px){
-   
+/*hamburger*/
+@media (max-width:500px){
     .aboutus{
+       /*
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(8, 1fr);
+       */
+        display: flex;
+        flex-direction: column;
         justify-items: center;
         gap: 20px;
-        padding-left: 10%;
-        padding-right: 10%;
+        padding-left: 15%;
+        padding-right: 15%;
         font-family: 'roboto';
+        height: 100%;
+    }
+    .about-us-text p{
+            text-align: justify 
+    }
+    .food .img-container{
+        width: 200px;
+        height: 500px;
     }
     .food{
         display: flex;
         flex-direction: column;
+          
+    }
+    .food img{
+        width: 300px;
+        height: 400px;
+        object-fit: cover;
     }
     .food-info{
         width: 90vw;
         overflow: hidden;
         transition: 300ms all;
     }
-    .ingredients{
-        display: flex;
-        flex-direction: column;
-        color: black;
-        justify-content: flex-start;
-        font-family: "Roboto";  
-    }
-    .ingredients h3{
-        display: flex;
-        align-items: flex-start;
-        padding-bottom: 2vh;
-        font-family: "Roboto";  
-    }
-    .ingredients ul{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        font-family: "Roboto";  
-    }
-    .ingredients li{
-        display: flex;
-        color: black;
-        align-items: flex-start;
-        gap: 5px;
-        font-family: "Roboto";  
-    }
-    .recipe{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        font-family: "Roboto";
-        padding-left: 1vw;
-
-    }
-    .recipe h3{
-        display: flex;
-        align-items: flex-start;
-        padding-bottom: 1vw;
-        padding-top: 1vw;
-        font-family: "Roboto";  
-    }
-    .recipe ol{
-        display: flex;
-        color: black;
-        flex-direction: column;
-        align-items: flex-start;
-        text-align: center;
-        gap: 10px;
-        padding:20px;
-        font-family: "Roboto";
-       
-    }
-    .recipe ol li{
-        width:80vw;
-        
-    }
-    .footer{
-        display: flex;
-        flex-direction: row;
-<<<<<<< HEAD
-        justify-content: space-evenly;
-        height: 150px;
-        background-color: rgb(172, 115, 9);
-=======
-        justify-content: space-around;
-        height: 200px;
-        background-color: orange;
->>>>>>> 47529fddb195c810e102733ad580e41b27081222
-    }
-    .contact-us{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        font-family: "Roboto";   
-        color: white;
-        justify-content: flex-end;
-        padding-bottom: 35px;
-    }
-    .contact-us h3{
-        text-align: center;
-        font-family: "Roboto";   
-        color: white;
-        text-align: center;
-        padding-bottom: 20px;
-    }
-    .contact--us{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-    }
-    .contact-icons{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: flex-start;
-        gap: 20px;
-        padding-top: 11px;
-    }
-    .contact--icons{
-        display: flex;
-        flex-direction: row;
-        gap: 5px
-    }
-    .social-media{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-    }
-    .social-media h3{
-        text-align: center;
-        font-family: "Roboto";   
-        color: white;
-    }
-    .icons{
-        display: flex;
-        flex-direction: row;
-        gap: 15px;
-        justify-content: center;
-        padding-top: 20px;
-    }
-    .copyright{
-        color: white;
-        font-family: 'roboto';
-        font-size: small;
-        padding-top: 20px;
-    }
-
     .img-container{
-        width: 400px;
-        height: 400px;
-        object-fit: cover;
-        position: relative;
-        overflow: hidden;
-       }
-    .img-container .History{
-           width: 400px;
-           height: 400px;
+      width: auto;
+      height: auto;
+    }
+       .img-container .History{
+           width: 200px;
+           height: auto;
            background-color: black;
            font-family: "Roboto";  
            position: absolute;
@@ -568,87 +478,88 @@ main h2{
            flex-direction: column;
            text-align: center;
            color: bisque;
-           transition: 300ms all; 
+           transition: 300ms all;
+           
        }
-    .img-container .History p{
-        font-size: 90%;
-        padding: 15px;
-        text-align: justify;
-    }
-<<<<<<< HEAD
-    footer {
-        font-size: auto;
-        padding: auto;
-    }
-   
-}
-/* 2. media*/
-@media (max-width:480px){
-    header{
-        background-color: rgb(172, 115, 9);
-        height: 135px;
+       .img-container:hover .History{
+           right: 0;
+           opacity: 0.9;
+           width: 100%;
+           height: 100%;
+           font-size: 14px;
+       }
+       .img-container .History p{
+          
+           text-align: justify;
+       }
+    .about-us-img{
+        width: 500px;
+        height: 300px;
+        object-fit:cover;
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        width: auto;
-        height: auto;
-        
-       
-    }
-    .Logo{
-        display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
-        width: 70px;
-        height: 70px;
+     }
+    .Home{
+        display: flex;
+        padding-top:10%;
+        padding-bottom: 0%;
+        position: relative;
+        justify-content: flex-end;
+        flex-direction: column;
+        width: 100%;
+        height: 700px;
+        background-image: url(./images/Home-back.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
     }
-    nav{
-        display:flex;
-        flex-direction: row;
-        text-align: left;
-        justify-content:center;
-        font-family: "Roboto";
-        align-items:center;
-        font-size: 10px;
-        width: auto;
-        height: auto;
     
-    }
-    .navbar{
+    .Turkey{
     
-        display:flex;
-        flex-direction: row;
-        text-align: left;
-        justify-content:center;
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        text-align: center;
+    }
+    .Turkey img {
+        display: none;
+        box-sizing: border-box;
+        border-top-left-radius: 5%;
+        border-bottom-left-radius: 5%;
+        
+    }
+    .Portugal{
+        box-sizing: border-box;
+        display: flex;
+        position: relative;
+        top: -150px;
+    }
+    .Portugal img {
+        display: none;
+        box-sizing: border-box;
+        border-top-right-radius: 10%;
+        border-bottom-right-radius: 5%;
+        
+        
+    }
+    .Home p{
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        bottom: 350px;
+        color: lightblue;
+        font-size: 20px;
         font-family: "Roboto";
-        font-size: 16px;
-        align-items:center;
-        font-size: medium;
-        color: white;
-        overflow: hidden;
-        gap: 20px;
-        width: auto;
+        font-weight:bold;
+        
+    }
+    .food{
+        
+        width: 300px;
         height: auto;
     }
-    .navbar a{
-        text-decoration: none;
-        color: white;
-        width: auto;
-        font-size: 10px;
-        height: auto;
-    }
-    .dropdown{
-        float: left;
-        overflow: hidden;
-        width: auto;
-        height: auto;
-    }
-    button{
-        background-color:rgb(172, 115, 9);
-=======
-}
-@media (max-width:500px){
-
     .navbar{
         display: none;
     }
@@ -670,7 +581,7 @@ main h2{
       margin: 0;
     }
     header{
-      background-color: orange;
+      background-color: rgb(172, 115, 9);
       display: flex;
       flex-direction: row;
       justify-content: space-evenly;
@@ -683,7 +594,7 @@ main h2{
       --bar-height: 5px;
       --hamburger-gap: 6px;
       --foreground: white;
-      --background: orange;
+      --background: rgb(172, 115, 9);
       --hamburger-margin: 8px;
       --animation-timing: 200ms ease-in-out;
       --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
@@ -757,17 +668,18 @@ main h2{
       width: 0;
     }
      .sidebar {
+        
     position: absolute;
     transition: transform var(--animation-timing);
     transform: translateX(110vw);
     padding-top: calc(var(--hamburger-height) + var(--hamburger-margin) + 1rem);
-    background-color: orange;
+    background-color: rgb(172, 115, 9);
     color: var(--background);
     max-width: 30vw;
-    min-height: 100vh;
+    min-height: auto;
     display: flex;
     flex-direction: column;
-    color: orange;
+    color: rgb(172, 115, 9);
     min-width: 30vw;
     justify-content: flex-start;
     z-index: 1;
@@ -795,7 +707,7 @@ main h2{
     .sidebar .dropdowncontent {
         display: none;
         position: absolute;
-        background-color: orange;
+        background-color: rgb(172, 115, 9);
         min-width: 160px;
         box-shadow: -8px 8px 16px 0px rgba(0, 0, 0, 0.2); 
         z-index: 1;
@@ -808,6 +720,7 @@ main h2{
         transform: translateX(0);
     }
     .sidebar .dropdownbutton {
+        
         font-size: 16px;
         border: none;
         outline: none;
@@ -820,6 +733,7 @@ main h2{
     }
     */
     .navbar-hamburger{
+        
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -836,13 +750,11 @@ main h2{
     overflow: hidden;
     }
     button{
-        background-color: orange;
->>>>>>> 47529fddb195c810e102733ad580e41b27081222
+        background-color: rgb(172, 115, 9);
         color: white;
         font-family: 'roboto';
         font-size: 16px;
         border: none;
-<<<<<<< HEAD
         width: auto;
         height: auto;
     }
@@ -863,7 +775,7 @@ main h2{
         background-color: rgb(250, 201, 109);
         width: auto;
         height: auto;
-=======
+
     }
     .dropdown .dropdownbutton{
         font-size: medium;
@@ -876,24 +788,23 @@ main h2{
     }
     .navbar-smallscreen a:hover, .dropdown:hover .dropdownbutton:hover{
         background-color: rgb(250, 201, 109)
->>>>>>> 47529fddb195c810e102733ad580e41b27081222
+
       }
       .dropdowncontent {
         display: none;
         position: absolute;
-<<<<<<< HEAD
+
         background-color: rgb(172, 115, 9);
         max-width: 160px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
         width: auto;
         height: auto;
-=======
-        background-color: orange;
+        background-color: rgb(172, 115, 9);
         min-width: 160px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
->>>>>>> 47529fddb195c810e102733ad580e41b27081222
+
       }
       .dropdowncontent a {
         float: none;
@@ -901,7 +812,6 @@ main h2{
         padding: 12px 16px;
         text-decoration: none;
         display: block;
-<<<<<<< HEAD
         text-align: left;
         width: auto;
         height: auto;
@@ -917,8 +827,255 @@ main h2{
         width: auto;
         height: auto;
       }
+      @media (max-width:1000px){
+        /*contact us */
+        .contact-us {
+   
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        
+        }
+        .contact-us h1{
+            color: black;
+            padding-top: 50px;
+          
+        }
+        .contact-us form {
+            display: flex;
+            flex-direction: column;
+            min-width: 350px;
+            padding-top: 5vh;
+        }
+        input {
+            height: 4vh;
+        }
+        
+        .contact-us form button {
+            min-width: 60px;
+            max-width: 80px;
+            min-height: 35px;
+            align-self: center;
+            background-color:transparent;
+            border: 2px solid rgb(172, 115, 9);
+            color: black;
+            cursor: pointer;
+            margin-bottom: 50px;
+
+        }
+        /*about us */
+        .aboutus{
+            /*
+             display: grid;
+             grid-template-columns: repeat(1, 1fr);
+             grid-template-rows: repeat(8, 1fr);
+            */
+            display: flex;
+            flex-direction: column;
+             justify-items: center;
+             gap: 20px;
+             padding-left: 15%;
+             padding-right: 15%;
+             font-family: 'roboto';
+             height: 100%;
+         }
+         /*food img */
+         .food .img-container{
+            width: 600px;
+            height: 500px;
+            object-fit: cover;
+         }
+         .food{
+             display: flex;
+             flex-direction: column;
+               
+         }
+         .food-info{
+             width: 90vw;
+             overflow: hidden;
+             transition: 300ms all;
+         }
+         .img-container{
+            
+          width: auto;
+           height: auto;
+         }
     
-}
-=======
-}
->>>>>>> 47529fddb195c810e102733ad580e41b27081222
+         .about-us-img{
+             width: 300px;
+             height: auto;
+             object-fit:cover;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+          }
+       
+        
+    .food-info{
+        width: 90vw;
+        overflow: hidden;
+        transition: 300ms all;
+    }
+    /*animation*/
+       .img-container .History{
+           width: 200px;
+           height: auto;
+           background-color: black;
+           font-family: "Roboto";  
+           position: absolute;
+           right: 100%;
+           top: 0;
+           display: flex;
+           align-items: center;
+           justify-content:space-evenly;
+           flex-direction: column;
+           text-align: center;
+           color: bisque;
+           transition: 300ms all;
+           
+       }
+       .img-container:hover .History{
+           right: 0;
+           opacity: 0.9;
+           width: 100%;
+           height: 100%;
+           font-size: 14px;
+       }
+       .img-container .History p{
+          
+           text-align: justify;
+       }
+       /*text*/
+        .ingredients{
+            display: flex;
+            flex-direction: column;
+            color: black;
+            justify-content: flex-start;
+            font-family: "Roboto";  
+        }
+        .ingredients h3{
+            display: flex;
+            align-items: flex-start;
+            padding-bottom: 2vh;
+            font-family: "Roboto";  
+        }
+        .ingredients ul{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            font-family: "Roboto";  
+        }
+        .ingredients li{
+            display: flex;
+            color: black;
+            align-items: flex-start;
+            gap: 5px;
+            font-family: "Roboto";  
+        }
+        .recipe{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            font-family: "Roboto";
+            padding-left: 1vw;
+    
+        }
+        .recipe h3{
+            display: flex;
+            align-items: flex-start;
+            padding-bottom: 1vw;
+            padding-top: 1vw;
+            font-family: "Roboto";  
+        }
+        .recipe ol{
+            display: flex;
+            color: black;
+            flex-direction: column;
+            align-items: flex-start;
+            text-align: start;
+            gap: 5px;
+            padding-left: 15px;
+            font-family: "Roboto";
+        }
+        .recipe ol li{
+            width:80vw;
+        }
+        /*contact us */
+        footer{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            height: 200px;
+            background-color: rgb(172, 115, 9);
+        }
+        
+        .contact-us{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            font-family: "Roboto";   
+            color: white;
+            justify-content: flex-start;
+            font-size: 90%;
+            padding-bottom: 0;
+            padding-top: 15px;
+        }
+        .contact-us h3{
+            text-align: center;
+            font-family: "Roboto";   
+            color: white;
+            text-align: center;
+            font-size: 90%;
+        }
+        .contact--us{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            font-size: 90%
+        }
+        .contact-icons{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            gap: 10px;
+            padding-top: 0;
+            font-size: 90%;
+        }
+        .contact--icons{
+            display: flex;
+            flex-direction: row;
+            gap: 5px
+        }
+        .social-media{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            font-size: 90%;
+            padding-top: 15px;
+        }
+        .social-media h3{
+            text-align: center;
+            font-family: "Roboto";   
+            color: white;
+            font-size: 90%;
+        }
+        .icons{
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+            justify-content: center;
+        }
+        .copyright{
+            color: white;
+            font-family: 'roboto';
+            font-size: 90%;
+            padding-top: 30px;
+        }
+    
+      
+    }
+
+
+    
