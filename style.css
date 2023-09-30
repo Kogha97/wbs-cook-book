@@ -571,7 +571,8 @@ input {
         display: block;
     }
     footer{
-        height: auto;
+        height: 500px;
+        background-color: rgb(172, 115, 9);
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1006,6 +1007,8 @@ input {
             justify-content: space-around;
             height: 200px;
             background-color: rgb(172, 115, 9);
+            
+            
         }
         
         .contact-us{
