@@ -4,8 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+/*Header*/
 header{
-    background-color: orange;
+    background-color: rgb(172, 115, 9);
     height: 135px;
     display: flex;
     flex-direction: row;
@@ -49,12 +50,13 @@ nav{
     text-decoration: none;
     color: white;
 }
+/*drop doown*/
 .dropdown{
-float: left;
-overflow: hidden;
+    float: left;
+    overflow: hidden;
 }
 button{
-    background-color: orange;
+    background-color:rgb(172, 115, 9);
     color: white;
     font-family: 'roboto';
     font-size: 16px;
@@ -65,76 +67,76 @@ button{
     border: none;
     outline: none;
     color: white;
-
     background-color: transparent;
     font-family: inherit;
     margin: 0;
-
 }
 .navbar a:hover, .dropdown:hover .dropdownbutton:hover{
-    background-color: rgb(250, 201, 109)
-  }
-  .dropdowncontent {
+    background-color: rgb(172, 115, 9);
+}
+.dropdowncontent {
     display: none;
     position: absolute;
-    background-color: orange;
+    background-color: rgb(172, 115, 9);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-  }
-  .dropdowncontent a {
+}
+.dropdowncontent a {
     float: none;
     color: white;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     text-align: left;
-  }
-  .dropdowncontent a:hover {
+}
+.dropdowncontent a:hover {
     background-color: rgb(250, 201, 109)
-  }
-
-  .dropdown:hover .dropdowncontent {
+}
+.dropdown:hover .dropdowncontent {
     display: block;
-  }
-    .aboutus{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        justify-items: center;
-        gap: 20px;
-        padding-left: 10%;
-        padding-right: 10%;
-        font-family: 'roboto';
-     }
-     .about-us-text{
-        max-width: 500px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-     }
-     .about-us-img{
-        width: 500px;
-        height: 500px;
-        object-fit:cover;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-     }
-     img{
-        max-width: 100%;
-        max-height: 100%;
-     }
-     .about-us-text h1{
-        padding-bottom: 30px;
-     }
+}
+  /*about us*/
+.aboutus{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    justify-items: center;
+    gap: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-family: 'roboto';
+    padding: 50px;
+}
+.about-us-text{
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about-us-img{
+    width: 500px;
+    height: 500px;
+    object-fit:cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.about-us-text h1{
+    padding-bottom: 30px;
+}
+/*footer-main*/
 footer{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     height: 150px;
-    background-color: orange;
+    background-color: rgb(172, 115, 9);
 }
 .contact-us{
     display: flex;
@@ -194,7 +196,7 @@ footer{
     font-size: small;
     padding-top: 20px;
 }
-/* menu  */
+/* main  */
 main{
     display: flex;
     flex-direction: column;
@@ -214,6 +216,7 @@ main h2{
     padding-top: 5vh;
     font-family: "Roboto";  
 }
+/*food*/
 .food{
     display: flex;
     flex-direction: row;
@@ -230,16 +233,10 @@ main h2{
     object-fit: cover;
     transition: 300ms all;
 }
-.img-container{
- width: 500px;
- height: 500px;
- object-fit: cover;
- position: relative;
- overflow: hidden;
-}
+/*animation*/
 .img-container .History{
-    width: 500px;
-    height: 500px;
+    width: auto;
+    height: auto;
     background-color: black;
     font-family: "Roboto";  
     position: absolute;
@@ -252,8 +249,6 @@ main h2{
     text-align: center;
     color: bisque;
     transition: 300ms all;
-    
-    
 }
 .img-container:hover .History{
     right: 0;
@@ -264,11 +259,19 @@ main h2{
     text-align: justify;
 }
 .food-info{
-    height: 65vh;
+    height: 100%;
     width: 40vw;
     overflow: hidden;
     transition: 300ms all;
 }
+.img-container{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    position: relative;
+    overflow: hidden;
+}
+/*text*/
 .ingredients{
     display: flex;
     flex-direction: column;
@@ -300,6 +303,8 @@ main h2{
     flex-direction: column;
     justify-content: flex-start;
     font-family: "Roboto";  
+    width: 100%;
+    height: 100%;
 }
 .recipe h3{
     display: flex;
@@ -315,40 +320,227 @@ main h2{
     align-items: flex-start;
     text-align: start;
     gap: 5px;
-    padding-left: 15px;
+    padding-left:20px;
     font-family: "Roboto";  
+    padding-bottom: 50px;
+    width: 100%;
+    height: 100%;
 }
 .rounded {
-    border-top: 5px solid orange;
+    border-top: 5px solid rgb(172, 115, 9);
     border-radius: 5px;
     width: 50%;
     position: relative;
     left: 25%;
     padding-bottom: 5vh;
 }
-
-/* media queris */
-
-@media (max-width:1200px){
+/*Connect us */
+.contact-us {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.contact-us h1{
+    color: black;
+    padding-top: 50px;
+}
+.contact-us form {
+    display: flex;
+    flex-direction: column;
+    min-width: 350px;
+    padding-top: 5vh;
+}
+input {
+    height: 4vh;
+}
+.contact-us form button {
+    min-width: 6wv;
+    max-width: 8vw;
+    min-height: 35px;
+    align-self: center;
+    background-color:transparent;
+    border: 2px solid rgb(172, 115, 9);
+    color: black;
+    cursor: pointer;
+}
+/*Home Page*/
+.Home{
+    display: flex;
+    padding-top:10%;
+    padding-bottom: 0%;
+    position: relative;
+    justify-content: flex-end;
+    flex-direction: column;
+    width: auto;
+    height:auto;
+    background-image: url(./images/Home-back.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.Turkey{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+.Turkey img {
+    width:750px; 
+    height:500px;
+    box-sizing: border-box;
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+}
+.Portugal{
+    box-sizing: border-box;
+    display: flex;
+    position: relative;
+    top: -150px;
+}
+.Portugal img {
+    width:750px; 
+    height:500px;
+    box-sizing: border-box;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 5%;
+}
+.Home p{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    bottom: 580px;
+    color: white;
+    font-size: 30px;
+    font-family: "Roboto";
+}
+/*hamburger*/
+@media (max-width:1000px){
+    /*about us */
     .aboutus{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(8, 1fr);
-        justify-items: center;
-        gap: 20px;
-        padding-left: 10%;
-        padding-right: 10%;
-        font-family: 'roboto';
+        /*
+         display: grid;
+         grid-template-columns: repeat(1, 1fr);
+         grid-template-rows: repeat(8, 1fr);
+        */
+        display: flex;
+        flex-direction: column;
+         justify-items: center;
+         gap: 20px;
+         padding-left: 15%;
+         padding-right: 15%;
+         font-family: 'roboto';
+         height: 100%;
+    }
+    .about-us-img{
+        width: 300px;
+        height: auto;
+        object-fit:cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+     /*food img */
+     .food .img-container{
+        width: 600px;
+        height: 500px;
+        object-fit: cover;
     }
     .food{
         display: flex;
-        flex-direction: column;
+        flex-direction: column; 
     }
     .food-info{
         width: 90vw;
         overflow: hidden;
         transition: 300ms all;
     }
+     .img-container{
+        width: auto;
+        height: auto;
+    }
+
+    .food-info{
+        width: 90vw;
+        overflow: hidden;
+        transition: 300ms all;
+    }
+    .Home{
+        display: flex;
+        padding-top:10%;
+        padding-bottom: 0%;
+        position: relative;
+        justify-content: flex-end;
+        flex-direction: column;
+        width: 100%;
+        height: 700px;
+        background-image: url(./images/Home-back.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    .Turkey{
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        text-align: center;
+    }
+    .Turkey img {
+        display: none;
+        box-sizing: border-box;
+        border-top-left-radius: 5%;
+        border-bottom-left-radius: 5%;
+    }
+    .Portugal{
+        box-sizing: border-box;
+        display: flex;
+        position: relative;
+        top: -150px;
+    }
+    .Portugal img {
+        display: none;
+        box-sizing: border-box;
+        border-top-right-radius: 10%;
+        border-bottom-right-radius: 5%;
+    }
+    .Home p{
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        bottom: 350px;
+        color: lightblue;
+        font-size: 20px;
+        font-family: "Roboto";
+        font-weight:bold;
+    }
+/*animation*/
+   .img-container .History{
+       width: 200px;
+       height: auto;
+       background-color: black;
+       font-family: "Roboto";  
+       position: absolute;
+       right: 100%;
+       top: 0;
+       display: flex;
+       align-items: center;
+       justify-content:space-evenly;
+       flex-direction: column;
+       text-align: center;
+       color: bisque;
+       transition: 300ms all;
+   }
+   .img-container:hover .History{
+       right: 0;
+       opacity: 0.9;
+       width: 100%;
+       height: 100%;
+       font-size: 14px;
+   }
+   .img-container .History p{
+       text-align: justify;
+   }
+   /*text*/
     .ingredients{
         display: flex;
         flex-direction: column;
@@ -381,7 +573,6 @@ main h2{
         justify-content: flex-start;
         font-family: "Roboto";
         padding-left: 1vw;
-
     }
     .recipe h3{
         display: flex;
@@ -403,13 +594,15 @@ main h2{
     .recipe ol li{
         width:80vw;
     }
+    /*contact us */
     footer{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         height: 200px;
-        background-color: orange;
+        background-color: rgb(172, 115, 9);
     }
+    /*contact us */
     .contact-us{
         display: flex;
         flex-direction: column;
@@ -420,6 +613,30 @@ main h2{
         font-size: 90%;
         padding-bottom: 0;
         padding-top: 15px;
+    }
+    .contact-us h1{
+        color: black;
+        padding-top: 50px;
+    }
+    .contact-us form {
+        display: flex;
+        flex-direction: column;
+        min-width: 350px;
+        padding-top: 5vh;
+    }
+    input {
+        height: 4vh;
+    }
+    .contact-us form button {
+        min-width: 60px;
+        max-width: 80px;
+        min-height: 35px;
+        align-self: center;
+        background-color:transparent;
+        border: 2px solid rgb(172, 115, 9);
+        color: black;
+        cursor: pointer;
+        margin-bottom: 50px;
     }
     .contact-us h3{
         text-align: center;
@@ -474,38 +691,135 @@ main h2{
         font-size: 90%;
         padding-top: 30px;
     }
+}
 
-    .img-container{
-        width: 400px;
+@media (max-width:500px)
+{
+     /*About us*/
+    .aboutus{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        gap: 20px;
+        padding-left: 15%;
+        padding-right: 15%;
+        font-family: 'roboto';
+        height: 100%;
+    }
+    .about-us-text p{
+        text-align: justify 
+    }
+    .about-us-img{
+        width: 300px;
+        height: 300px;
+        object-fit:cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /*Food - img*/
+    .food{
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        height: auto;
+    }
+    .food .img-container{
+        width: 300px;
+        height:500px;
+    }
+    .food img{
+        width: 300px;
         height: 400px;
         object-fit: cover;
-        position: relative;
+    }
+    .food-info{
+        width: 90vw;
         overflow: hidden;
-       }
+        transition: 300ms all;
+    }
+    /*animation*/
     .img-container .History{
-           width: 400px;
-           height: 400px;
-           background-color: black;
-           font-family: "Roboto";  
-           position: absolute;
-           right: 100%;
-           top: 0;
-           display: flex;
-           align-items: center;
-           justify-content:space-evenly;
-           flex-direction: column;
-           text-align: center;
-           color: bisque;
-           transition: 300ms all; 
-       }
-    .img-container .History p{
-        font-size: 90%;
-        padding: 15px;
+        width: 200px;
+        height: auto;
+        background-color: black;
+        font-family: "Roboto";  
+        position: absolute;
+        right: 100%;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content:space-evenly;
+        flex-direction: column;
+        text-align: center;
+        color: bisque;
+        transition: 300ms all;   
+    }
+    .img-container:hover .History{
+        right: 0;
+        opacity: 0.9;
+        width: 100%;
+        height: 100%;
+        font-size: 14px;
+    }
+       .img-container .History p{
         text-align: justify;
     }
-}
-@media (max-width:500px){
-
+    .img-container{
+        width: auto;
+        height: auto;
+    }
+    /*Home*/
+    .Home{
+        display: flex;
+        padding-top:10%;
+        padding-bottom: 0%;
+        position: relative;
+        justify-content: flex-end;
+        flex-direction: column;
+        width: 100%;
+        height: 700px;
+        background-image: url(./images/Home-back.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    .Turkey{
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        text-align: center;
+    }
+    .Turkey img {
+        display: none;
+        box-sizing: border-box;
+        border-top-left-radius: 5%;
+        border-bottom-left-radius: 5%;
+    }
+    .Portugal{
+        box-sizing: border-box;
+        display: flex;
+        position: relative;
+        top: -150px;
+    }
+    .Portugal img {
+        display: none;
+        box-sizing: border-box;
+        border-top-right-radius: 10%;
+        border-bottom-right-radius: 5%;
+    }
+    .Home p{
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        bottom: 350px;
+        color: lightblue;
+        font-size: 20px;
+        font-family: "Roboto";
+        font-weight:bold;
+    }
+    /*nav bar */
     .navbar{
         display: none;
     }
@@ -516,8 +830,10 @@ main h2{
     .navbar-smallscreen{
         display: block;
     }
+    /*footer*/
     footer{
-        height: auto;
+        height: 500px;
+        background-color: rgb(172, 115, 9);
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -527,102 +843,90 @@ main h2{
     *,
     *::after,
     *::before {
-      box-sizing: border-box;
+        box-sizing: border-box;
     }
-    
     body {
-      margin: 0;
+        margin: 0;
     }
     header{
-      background-color: orange;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-      min-width: 100%;
-      height: 100px;
-    
+        background-color: rgb(172, 115, 9);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        min-width: 100%;
+        height: 100px;
     }
-
     :root {
-      --bar-width: 50px;
-      --bar-height: 5px;
-      --hamburger-gap: 6px;
-      --foreground: white;
-      --background: rgb(172, 115, 9);
-      --hamburger-margin: 8px;
-      --animation-timing: 200ms ease-in-out;
-      --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
+        --bar-width: 50px;
+        --bar-height: 5px;
+        --hamburger-gap: 6px;
+        --foreground: white;
+        --background: rgb(172, 115, 9);
+        --hamburger-margin: 8px;
+        --animation-timing: 200ms ease-in-out;
+        --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
     }
-    
     .hamburger-menu {
-      --x-width: calc(var(--hamburger-height) * 1.41421356237);
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      gap: var(--hamburger-gap);
-      width: max-content;
-      position: absolute;
-      top: var(--hamburger-margin);
-      left: var(--hamburger-margin);
-      z-index: 2;
-      cursor: pointer;
-      position: absolute;
-      left: 82vw;
-      top: 30px;
+        --x-width: calc(var(--hamburger-height) * 1.41421356237);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        gap: var(--hamburger-gap);
+        width: max-content;
+        position: absolute;
+        top: var(--hamburger-margin);
+        left: var(--hamburger-margin);
+        z-index: 2;
+        cursor: pointer;
+        position: absolute;
+        left: 82vw;
+        top: 30px;
     }
-    
     .hamburger-menu:has(input:checked) {
-      --foreground: white;
-      --background: white;
+        --foreground: white;
+        --background: white;
     }
-    
     .hamburger-menu:has(input:focus-visible)::before,
     .hamburger-menu:has(input:focus-visible)::after,
     .hamburger-menu input:focus-visible {
-      border: 1px solid var(--background);
-      box-shadow: 0 0 0 1px var(--foreground);
+        border: 1px solid var(--background);
+        box-shadow: 0 0 0 1px var(--foreground);
     }
-    
     .hamburger-menu::before,
     .hamburger-menu::after,
     .hamburger-menu input {
-      content: "";
-      width: var(--bar-width);
-      height: var(--bar-height);
-      background-color: var(--foreground);
-      border-radius: 9999px;
-      transform-origin: right center;
-      transition: opacity var(--animation-timing), width var(--animation-timing),
+        content: "";
+        width: var(--bar-width);
+        height: var(--bar-height);
+        background-color: var(--foreground);
+        border-radius: 9999px;
+        transform-origin: right center;
+        transition: opacity var(--animation-timing), width var(--animation-timing),
         rotate var(--animation-timing), translate var(--animation-timing),
         background-color var(--animation-timing);
     }
-    
     .hamburger-menu input {
-      appearance: none;
-      padding: 0;
-      margin: 0;
-      outline: none;
-      pointer-events: none;
+        appearance: none;
+        padding: 0;
+        margin: 0;
+        outline: none;
+        pointer-events: none;
     }
-    
     .hamburger-menu:has(input:checked)::before {
-      rotate: -45deg;
-      width: var(--x-width);
-      translate: 0 calc(var(--bar-height) / -2);
+        rotate: -45deg;
+        width: var(--x-width);
+        translate: 0 calc(var(--bar-height) / -2);
     }
-    
     .hamburger-menu:has(input:checked)::after {
-      rotate: 45deg;
-      width: var(--x-width);
-      translate: 0 calc(var(--bar-height) / 2);
+        rotate: 45deg;
+        width: var(--x-width);
+        translate: 0 calc(var(--bar-height) / 2);
     }
     }
     .hamburger-menu input:checked {
       opacity: 0;
       width: 0;
     }
-
-
     .sidebar {
         display: none;
         position: absolute;
@@ -635,7 +939,7 @@ main h2{
         min-height: 35dvh;
         /* display: flex; */
         z-index: 1;
-        }
+    }
     .sidebar .navbar-hamburger {
         display: flex;
         flex-direction: column;
@@ -648,7 +952,6 @@ main h2{
         font-size: 16px;
         margin-bottom: 10px;
     }     
-     
     .hamburger-menu:has(input:checked) + .sidebar {
         /* transform: translateX(0); */
         display: block;
@@ -696,8 +999,8 @@ main h2{
         color: white;
     }
     .dropdown{
-    float: right;
-    overflow: hidden;
+        float: right;
+        overflow: hidden;
     }
     button{
         background-color: rgb(172, 115, 9);
@@ -705,6 +1008,24 @@ main h2{
         font-family: 'roboto';
         font-size: 16px;
         border: none;
+        width: auto;
+        height: auto;
+    }
+    .dropdown .dropdownbutton{
+        font-size: 10px;
+        border: none;
+        outline: none;
+        color: white;
+        width: auto;
+        height: auto;
+        background-color: transparent;
+        font-family: inherit;
+        margin: 0;
+    }
+    .navbar a:hover, .dropdown:hover .dropdownbutton:hover{
+        background-color: rgb(250, 201, 109);
+        width: auto;
+        height: auto;
     }
     .dropdown .dropdownbutton{
         font-size: medium;
@@ -716,20 +1037,37 @@ main h2{
         margin: 0;
     }
     .navbar-smallscreen a:hover, .dropdown:hover .dropdownbutton:hover{
-        background-color: rgb(250, 201, 109)
-      }
-      .dropdowncontent {
+        background-color: rgb(172, 115, 9);
+
+    }
+    .dropdowncontent {
         display: none;
         position: absolute;
         background-color: rgb(172, 115, 9);
         min-width: 160px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
-      }
-      .dropdowncontent a {
+    }
+    .dropdowncontent a {
         float: none;
         color: white;
         padding: 12px 16px;
         text-decoration: none;
         display: block;
-}
+        text-align: left;
+        width: auto;
+        height: auto;
+        font-size: auto;
+    }
+    .dropdowncontent a:hover {
+        background-color: rgb(172, 115, 9);
+    }
+    .dropdown:hover .dropdowncontent {
+        display: block;
+        width: auto;
+        height: auto;
+    }
+      
+
+
+    
