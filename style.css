@@ -434,9 +434,11 @@ input {
          padding-right: 15%;
          font-family: 'roboto';
          height: 100%;
+         text-align: justify;
+         align-items: center;
     }
     .about-us-img{
-        width: 300px;
+        width: 500px;
         height: auto;
         object-fit:cover;
         display: flex;
@@ -615,6 +617,7 @@ input {
         color: white;
         justify-content: flex-start;
         font-size: 90%;
+    
         padding-bottom: 0;
         padding-top: 15px;
     }
@@ -836,7 +839,7 @@ input {
     }
     /*footer*/
     footer{
-        height: 500px;
+        height: 300px;
         background-color: rgb(172, 115, 9);
         display: flex;
         flex-direction: column;
@@ -943,7 +946,12 @@ input {
         min-height: 35dvh;
         /* display: flex; */
         z-index: 1;
+        right: 0;
     }
+.dropdownbutton:checked{
+    display: block;
+}
+
     .sidebar .navbar-hamburger {
         display: flex;
         flex-direction: column;
@@ -1071,7 +1079,9 @@ input {
         width: auto;
         height: auto;
     }
-      
+    form input textarea{
+        border: 1px solid black
+    }
 
 
     
